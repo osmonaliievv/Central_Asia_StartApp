@@ -1,9 +1,10 @@
+@import "../../styles/style.scss";
 .media-partners {
   text-align: center;
   padding: 80px 20px;
 
   &__title {
-    font-size: 48px;
+    @include adaptiveValue("font-size", 60, 30);
     font-weight: 600;
     color: white;
     margin-bottom: 60px;
@@ -13,6 +14,11 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 40px;
+    @media (max-width: 1050px) {
+      flex-wrap: wrap;
+      justify-content: space-around;
+      margin-bottom: 30px;
+    }
 
     &--center {
       justify-content: center; /* чтобы 2 лого были по центру */

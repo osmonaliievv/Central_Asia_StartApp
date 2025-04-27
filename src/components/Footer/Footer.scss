@@ -2,12 +2,23 @@
   &__background {
     background: #000;
     padding: 120px;
+    @media (max-width: 520px) {
+      padding: 50px;
+    }
   }
 
   &__container {
     display: flex;
     justify-content: space-between;
     color: white;
+    @media (max-width: 1300px) {
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+    @media (max-width: 520px) {
+      flex-wrap: wrap;
+      gap: 20px;
+    }
   }
 
   &__socialMedias {

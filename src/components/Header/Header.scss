@@ -1,7 +1,8 @@
 @import "../../styles/style.scss";
+
 .header {
+  position: relative;
   border-radius: 0px 0px 0px 0px;
-  opacity: 0.85;
   background-image: linear-gradient(
     0.257turn,
     rgba(16, 20, 43, 1) 0%,
@@ -9,26 +10,62 @@
   );
   border-color: transparent;
   border-style: solid;
+  padding: 20px;
+
   &__container {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin: 15px;
+    position: relative;
+    z-index: 2;
   }
-  &__nav-list {
+
+  &__logo img {
+    height: 50px;
+  }
+
+  &__burger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 25px;
+    height: 20px;
+    cursor: pointer;
+    z-index: 1001;
+
+    span {
+      display: block;
+      height: 3px;
+      width: 100%;
+      background-color: white;
+      border-radius: 3px;
+    }
+  }
+
+  &__menu {
     display: flex;
     align-items: center;
     gap: 30px;
+
+    .header__nav-list {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+    }
   }
+
   &__nav-item {
     color: white;
     text-decoration: none;
     font-size: 16px;
     font-weight: 500;
+
     &:hover {
       cursor: pointer;
     }
   }
+
   &__language_button {
     select {
       padding: 8px 12px;
@@ -37,9 +74,44 @@
       color: #ffffff;
       background-color: #fe5d25;
       font-size: 16px;
-      // background-repeat: no-repeat;
-      // background-position: right 10px center;
-      // background-size: 16px;
+    }
+  }
+
+  // Мобильная версия
+  @media (max-width: 1020px) {
+    &__burger {
+      display: flex;
+    }
+
+    &__menu {
+      display: none;
+      position: absolute;
+      top: 60px;
+      right: 15px;
+      background-color: rgba(16, 20, 43, 1); // полностью НЕ прозрачный фон
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 20px;
+      border-radius: 10px;
+      z-index: 1000;
+
+      &.active {
+        display: flex;
+      }
+
+      .header__nav-list {
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      .header__language_button {
+        margin-top: 20px;
+        width: 100%;
+
+        select {
+          width: 100%;
+        }
+      }
     }
   }
 }

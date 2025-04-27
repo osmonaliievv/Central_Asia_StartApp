@@ -1,6 +1,7 @@
+@import "../../styles/style.scss";
 .speakers {
   &__title {
-    font-size: 60px;
+    @include adaptiveValue("font-size", 60, 40);
     color: #ffffff;
     font-weight: 600;
     text-align: center;
@@ -19,6 +20,9 @@
       #202b5f 60%
     );
     border: 2px solid #2043ff;
+    @media (max-width: 590px) {
+      margin: 0 auto;
+    }
   }
 
   &__cards-img {
@@ -49,6 +53,10 @@
   &__subtitle {
     display: flex;
     justify-content: space-between;
+    @media (max-width: 1170px) {
+      flex-wrap: wrap;
+      gap: 30px;
+    }
   }
   &__button-item {
     background-color: #f45924;

@@ -5,6 +5,15 @@
     display: flex;
     justify-content: space-between;
     max-width: 1160px;
+    @media (max-width: 900px) {
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+    @media (max-width: 500px) {
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      gap: 30px;
+    }
   }
   &__title {
     font-size: 20px;

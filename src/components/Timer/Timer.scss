@@ -1,10 +1,15 @@
+@import "../../styles/style.scss";
 .timer {
   font-size: 43px;
+  @include adaptiveValue("font-size", 43, 25);
   color: #fff;
   padding-top: 58px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  @media (max-width: 1130px) {
+    justify-content: center;
+  }
   &__time {
     display: flex;
     gap: 20px;

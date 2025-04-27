@@ -1,0 +1,103 @@
+.programs {
+  padding-bottom: 180px;
+  &__title {
+    font-size: 60px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #ffffff;
+    text-align: center;
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+
+    button {
+      padding: 18px 22px;
+      font-size: 16px;
+      cursor: pointer;
+      background-color: #1f295c; // Серый цвет по умолчанию
+      border: none;
+      transition: background-color 0.3s, transform 0.2s;
+      color: white;
+
+      &.active {
+        background-color: #fe5d25; // Оранжевый если активный
+        color: white;
+      }
+    }
+  }
+
+  &__cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  &__card {
+    background: radial-gradient(
+      circle at center,
+      #1961d1 0%,
+      #1a57c7 10%,
+      #202b5f 60%
+    );
+    border: 2px solid #2043ff;
+    width: 350px;
+
+    &-top {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 20px;
+    }
+
+    &-logo {
+      font-size: 30px;
+    }
+
+    &-time {
+      font-size: 16px;
+      color: white;
+    }
+
+    &-title {
+      font-size: 16px;
+      margin-bottom: 10px;
+      color: white;
+      padding-left: 20px;
+    }
+
+    &-list {
+      list-style-type: disc;
+      list-style-position: inside;
+      padding-left: 20px;
+      margin-top: 10px;
+      padding-bottom: 20px;
+
+      li {
+        margin-bottom: 6px;
+        font-size: 14px;
+        color: white;
+      }
+    }
+  }
+  &__button_all {
+    text-align: center;
+  }
+
+  &__button_all-btn {
+    color: #ffffff;
+    background: #f45924;
+    padding: 20px 60px;
+    margin-top: 40px;
+    &:hover {
+      cursor: pointer;
+      transition: 500ms;
+      background: white;
+      color: #000;
+    }
+  }
+}

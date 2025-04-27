@@ -1,0 +1,36 @@
+.media-partners {
+  text-align: center;
+  padding: 80px 20px;
+
+  &__title {
+    font-size: 48px;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 60px;
+  }
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+
+    &--center {
+      justify-content: center; /* чтобы 2 лого были по центру */
+      gap: 40px;
+    }
+  }
+
+  &__logo {
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+
+    img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+    }
+  }
+}

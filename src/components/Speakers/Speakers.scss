@@ -1,0 +1,71 @@
+.speakers {
+  &__title {
+    font-size: 60px;
+    color: #ffffff;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 135px;
+    padding-bottom: 20px;
+  }
+
+  &__cards {
+    text-align: center;
+    width: 260px;
+    height: 420px;
+    background: radial-gradient(
+      circle at center,
+      #1961d1 0%,
+      #1a57c7 10%,
+      #202b5f 60%
+    );
+    border: 2px solid #2043ff;
+  }
+
+  &__cards-img {
+    width: 200px;
+    height: 200px;
+    border: 2px solid #2043ff;
+    margin: 20px 30px 20px 30px;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__cards-name {
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 700;
+  }
+
+  &__cards-info {
+    font-size: 14px;
+    line-height: 1.3;
+    color: #8d909e;
+    font-weight: 400;
+    padding-bottom: 10px;
+    padding-top: 20px;
+  }
+  &__subtitle {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__button-item {
+    background-color: #f45924;
+    color: #ffffff;
+    padding: 20px 60px;
+    font-size: 16px;
+    margin-bottom: 100px;
+    &:hover {
+      cursor: pointer;
+      transition: 500ms;
+      background-color: white;
+      color: #000;
+    }
+  }
+  &__button {
+    display: flex;
+    justify-content: center;
+    padding-top: 60px;
+  }
+}

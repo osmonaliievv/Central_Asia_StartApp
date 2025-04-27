@@ -1,0 +1,45 @@
+@import "../../styles/style.scss";
+.header {
+  border-radius: 0px 0px 0px 0px;
+  opacity: 0.85;
+  background-image: linear-gradient(
+    0.257turn,
+    rgba(16, 20, 43, 1) 0%,
+    rgba(22, 48, 192, 0.9) 100%
+  );
+  border-color: transparent;
+  border-style: solid;
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 15px;
+  }
+  &__nav-list {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+  &__nav-item {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  &__language_button {
+    select {
+      padding: 8px 12px;
+      border: 0;
+      border-radius: 8px;
+      color: #ffffff;
+      background-color: #fe5d25;
+      font-size: 16px;
+      // background-repeat: no-repeat;
+      // background-position: right 10px center;
+      // background-size: 16px;
+    }
+  }
+}

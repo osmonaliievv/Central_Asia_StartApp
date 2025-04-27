@@ -1,0 +1,43 @@
+.footer {
+  &__background {
+    background: #000;
+    padding: 120px;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+  }
+
+  &__socialMedias {
+  }
+
+  &__socialMedias1 {
+  }
+
+  &__socialMedias2 {
+  }
+
+  &__socialMedias3 {
+  }
+
+  &__contacts1 {
+  }
+
+  &__title {
+    color: #525252;
+    font-size: 16px;
+    padding-bottom: 10px;
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-size: 14px;
+    width: 250px;
+  }
+  &__li {
+    font-size: 14px;
+  }
+}

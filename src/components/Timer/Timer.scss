@@ -1,0 +1,20 @@
+.timer {
+  font-size: 43px;
+  color: #fff;
+  padding-top: 58px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__time {
+    display: flex;
+    gap: 20px;
+    font-weight: 400;
+  }
+
+  &__text {
+    display: flex;
+    font-size: 16px;
+    gap: 40px;
+    padding-top: 5px;
+  }
+}
